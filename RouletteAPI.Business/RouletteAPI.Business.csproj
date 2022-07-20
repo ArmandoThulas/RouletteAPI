@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RouletteAPI.Data\RouletteAPI.Data.csproj" />
+    <ProjectReference Include="..\RouletteAPI.Enum\RouletteAPI.Enum.csproj" />
+    <ProjectReference Include="..\RouletteAPI.Model\RouletteAPI.Model.csproj" />
+    <ProjectReference Include="..\RouletteAPI.Service\RouletteAPI.Service.csproj" />
+  </ItemGroup>
+
+</Project>

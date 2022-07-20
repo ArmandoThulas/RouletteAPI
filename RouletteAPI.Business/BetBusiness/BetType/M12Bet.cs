@@ -19,12 +19,12 @@ public class M12Bet : IBetType
 
     public BetResultModel BetResult()
     {
-        var isvalid = wheelNumber >= 13 && wheelNumber <= 24;
+        var isValid = wheelNumber >= 13 && wheelNumber <= 24;
         var betResult = new BetResultModel
         {
             bet = bet,
             wheelNumber = wheelNumber,
-            result = isvalid
+            result = isValid
         };
         return betResult;
     }

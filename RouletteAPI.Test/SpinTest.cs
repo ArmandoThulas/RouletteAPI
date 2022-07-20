@@ -20,7 +20,7 @@ public class SpinTest
     public void Is_Wheel_Number_Valid()
     {
         var wheelNumber = WheelNumber.Generate();
-        var isValid = wheelNumber <= 36 && wheelNumber >= 1;
+        var isValid = wheelNumber is <= 36 and >= 1;
         Assert.IsTrue(isValid);
     }
 

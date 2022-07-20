@@ -31,7 +31,7 @@ public class SpinRepository : ISpinRepository
         using IDbConnection connection = new SqlConnection(RouletteAppSettings.GetConnectionString("Default"));
         DynamicParameters parameter = new DynamicParameters();
         parameter.Add("@pageNumber", pageNumber);
-        parameter.Add("@pageSize", pageNumber);
+        parameter.Add("@pageSize", pageSize);
         parameter.Add("@totalNumber", dbType: DbType.String, direction: ParameterDirection.Output, size: 5215585);
         var spins = await connection.QueryAsync<SpinModel>("dbo.PS_PreviousSpin", parameter, commandType: CommandType.StoredProcedure);
         var model = new PreviousSpinsModel

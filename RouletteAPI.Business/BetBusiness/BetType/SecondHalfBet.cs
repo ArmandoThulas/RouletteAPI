@@ -19,12 +19,12 @@ public class SecondHalfBet : IBetType
 
     public BetResultModel BetResult()
     {
-        var isvalid = wheelNumber >= 19 && wheelNumber <= 36;
+        var isValid = wheelNumber >= 19 && wheelNumber <= 36;
         var betResult = new BetResultModel
         {
             bet = bet,
             wheelNumber = wheelNumber,
-            result = isvalid
+            result = isValid
         };
         return betResult;
     }

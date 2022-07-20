@@ -20,7 +20,7 @@ public class PreviousSpins
     public async Task<PreviousSpinsModel> GetSpins(int? page, int? pageSize)
     {
         var pageNumber = page is null || page < 1 ? 1 : (int)page;
-        var pSize = int.Parse(RouletteAppSettings.GetAppSetting("DefaultPageSize"));
+        var pSize = pageSize is null || pageSize < 1 ? int.Parse(RouletteAppSettings.GetAppSetting("DefaultPageSize")) : (int)pageSize;
         return await _spinRepository.GetSpins(pageNumber, pSize);
     }
 }

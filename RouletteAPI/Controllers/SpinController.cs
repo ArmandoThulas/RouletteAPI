@@ -27,7 +27,6 @@ public class SpinController : ControllerBase
         catch (Exception ex)
         {
             return Problem(ex.Message);
-            throw;
         }
     }
 

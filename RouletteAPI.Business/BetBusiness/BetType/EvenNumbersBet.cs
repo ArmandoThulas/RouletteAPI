@@ -19,12 +19,12 @@ public class EvenNumbersBet : IBetType
 
     public BetResultModel BetResult()
     {
-        var isvalid = wheelNumber % 2 == 0;
+        var isValid = wheelNumber % 2 == 0;
         var betResult = new BetResultModel
         {
             bet = bet,
             wheelNumber = wheelNumber,
-            result = isvalid
+            result = isValid
         };
         return betResult;
     }

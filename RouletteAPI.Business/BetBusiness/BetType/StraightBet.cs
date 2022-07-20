@@ -19,12 +19,12 @@ public class StraightBet : IBetType
 
     public BetResultModel BetResult()
     {
-        var isvalid = wheelNumber == bet.straightNumber;
+        var isValid = wheelNumber == bet.straightNumber;
         var betResult = new BetResultModel
         {
             bet = bet,
             wheelNumber = wheelNumber,
-            result = isvalid
+            result = isValid
         };
         return betResult;
     }

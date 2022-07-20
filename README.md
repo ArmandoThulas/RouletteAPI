@@ -1,7 +1,7 @@
 # Roulette API
 # Step 1 - Store Procedure
 <ul>
-  <li><a href="https://github.com/ArmandoThulas/RouletteAPI/blob/master/GetOrderSummary.sql">GetOrderSummary.sql</a></li>
+  <li><a href="https://github.com/ArmandoThulas/RouletteAPI/blob/master/GetOrderSummary.sql">pr_GetOrderSummary.sql</a></li>
   <li><a href="https://github.com/ArmandoThulas/RouletteAPI/blob/master/GetOrderSummary.sqlhttps://github.com/ArmandoThulas/RouletteAPI/blob/master/Northwind%20Db.sql">Northwind Db</a></li>
 </ul>
 
